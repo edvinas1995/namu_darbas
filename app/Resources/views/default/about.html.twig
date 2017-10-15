@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <p>Vartotojo vardas: <strong>{{ user.username }}</strong></p>
+            <p>El.paštas: <strong>{{ user.email }}</strong></p>
+            <img src="{{ user.email | gravatar }}" alt="User logo" />
+        </div>
+    </div>
+{% endblock %}
